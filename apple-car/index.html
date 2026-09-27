@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Car — 혁명의 시작</title>
+  <meta name="description" content="완전히 새로운 모빌리티, Apple Car 공식 론칭 페이지. 혁명의 시작을 가장 먼저 경험하세요.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo" id="nav-logo" aria-label="Apple Car">
+        <svg class="apple-icon" viewBox="0 0 170 170" fill="currentColor">
+          <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.67-7.81-11.96-14.31-7.14-10.9-12.77-23.77-16.89-38.61-4.12-14.84-6.18-28.51-6.18-41.01 0-16.14 4.09-29.47 12.27-40 8.18-10.53 18.77-15.89 31.78-16.08 4.58 0 10.04 1.25 16.38 3.75 6.34 2.5 10.45 3.86 12.33 4.08 2.39-.43 6.6-1.89 12.63-4.38 6.03-2.49 11.25-3.63 15.65-3.42 12.18.65 22.37 5.14 30.58 13.48 8.21 8.34 13.37 18.74 15.48 31.21-10.87 6.52-16.2 15.54-15.98 27.06.22 10.65 4.3 19.34 12.24 26.07 7.94 6.73 17.51 10.75 28.71 12.06-2.39 7.39-5.44 14.78-9.15 22.17zM119.22 31.85c0-7.39 2.61-14.24 7.83-20.54 5.22-6.31 11.74-10.43 19.57-12.37.43 1.96.65 3.8.65 5.54 0 7.39-2.72 14.56-8.15 21.52-5.43 6.96-12.06 11.09-19.89 12.39-.01-2.18-.01-4.36-.01-6.54z"/>
+        </svg>
+        <span class="logo-text">Car</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#overview" class="nav-item">개요</a>
+        <a href="#performance" class="nav-item">성능</a>
+        <a href="#intelligence" class="nav-item">자율주행</a>
+        <a href="#ecosystem" class="nav-item">생태계</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#preorder" class="btn-primary-small" id="nav-preorder-btn">사전 예약</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section" id="overview">
+      <div class="hero-content">
+        <div class="badge-wrapper">
+          <span class="pulse-badge">
+            <span class="pulse-dot"></span>
+            차세대 모빌리티의 새로운 지평
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          혁명의 시작<span class="accent-period">.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          인류의 이동 경험을 다시 정의합니다.<br>
+          경이로운 자율주행, 완전한 전기 파워트레인, 유기적인 Apple 생태계의 완벽한 융합.
+        </p>
+
+        <!-- View Mode Selector Toggle -->
+        <div class="view-toggle-bar">
+          <button class="view-toggle-btn active" id="view-car-btn" data-view="car">
+            <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 10.9 2 11.2 2 11.5V16c0 .6.4 1 1 1h2m14 0a2 2 0 1 1-4 0m4 0a2 2 0 1 0-4 0m-8 0a2 2 0 1 1-4 0m4 0a2 2 0 1 0-4 0"/>
+            </svg>
+            <span>Apple Car 스튜디오 뷰</span>
+          </button>
+          <button class="view-toggle-btn" id="view-store-btn" data-view="store">
+            <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+            <span>공식 스토어 론칭 뷰</span>
+          </button>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#preorder" class="btn-glow" id="hero-order-cta">
+            <span>지금 사전 예약하기</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#performance" class="btn-glass" id="hero-explore-cta">
+            <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            <span>스펙 및 성능 보기</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Car Centerpiece Showcase directly at '혁명의 시작' -->
+      <div class="hero-car-stage" id="hero-car-stage">
+        <div class="hero-car-glow"></div>
+        <div class="hero-car-container" id="hero-car-container">
+          <img 
+            src="apple_car_hero.jpg" 
+            alt="Apple Car - 혁명의 시작" 
+            class="hero-car-main-img active"
+            id="hero-car-img"
+          >
+          <img 
+            src="apple_car_store.jpg" 
+            alt="Apple Car 공식 스토어 화면" 
+            class="hero-car-main-img"
+            id="hero-store-img"
+          >
+          <div class="car-floating-spec spec-left">
+            <span class="spec-label">최대 주행거리</span>
+            <strong class="spec-val">850 km</strong>
+          </div>
+          <div class="car-floating-spec spec-right">
+            <span class="spec-label">0-100 km/h</span>
+            <strong class="spec-val">2.1 초</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Metrics Section -->
+    <section class="metrics-section" id="performance">
+      <div class="section-container">
+        <div class="metrics-grid">
+          <div class="metric-card" data-tilt>
+            <div class="metric-number"><span class="counter" data-target="2.1">0</span><small>초</small></div>
+            <div class="metric-label">0-100 km/h 제로백</div>
+            <div class="metric-desc">듀얼 모터 올-휠 드라이브가 선사하는 즉각적인 토크</div>
+          </div>
+          <div class="metric-card" data-tilt>
+            <div class="metric-number"><span class="counter" data-target="850">0</span><small>km</small></div>
+            <div class="metric-label">최대 주행가능 거리</div>
+            <div class="metric-desc">차세대 솔리드스테이트 배터리 팩으로 서울-부산 왕복 완주</div>
+          </div>
+          <div class="metric-card" data-tilt>
+            <div class="metric-number"><span class="counter" data-target="12">0</span><small>분</small></div>
+            <div class="metric-label">초급속 충전 (10-80%)</div>
+            <div class="metric-desc">800V 초고전압 아키텍처로 충전 시간을 일상의 휴식으로</div>
+          </div>
+          <div class="metric-card" data-tilt>
+            <div class="metric-number">Level <span class="counter" data-target="4">0</span><small>+</small></div>
+            <div class="metric-label">완전 자율주행</div>
+            <div class="metric-desc">Apple Neural Superchip 탑재로 운전대를 놓는 완벽한 자유</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Bento Grid -->
+    <section class="features-section" id="intelligence">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-pill">INNOVATION</span>
+          <h2 class="section-title">주행의 개념을 뒤바꾸는 4가지 혁신</h2>
+          <p class="section-subtitle">단순한 이동 수단이 아닌, 생활과 생각이 머무는 가장 진보된 공간입니다.</p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Card 1 -->
+          <div class="bento-card bento-wide">
+            <div class="bento-content">
+              <span class="bento-tag">NEURAL CORE</span>
+              <h3>스스로 생각하고 반응하는 자율주행</h3>
+              <p>초당 800조 회 연산 가능한 신경망 칩과 18개의 고해상도 라이다 및 카메라가 도로의 360도 모든 순간을 실시간 3D 렌더링으로 분석합니다.</p>
+            </div>
+            <div class="bento-visual neural-visual">
+              <div class="radar-circle circle-1"></div>
+              <div class="radar-circle circle-2"></div>
+              <div class="radar-circle circle-3"></div>
+              <div class="sensor-chip">
+                <span>M-Titan Ultra</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bento-card" id="ecosystem">
+            <div class="bento-content">
+              <span class="bento-tag">CONTINUITY</span>
+              <h3>원활한 생태계 연속성</h3>
+              <p>iPhone, Apple Watch, Apple Vision Pro의 작업 공간이 차에 타는 즉시 전면 파노라믹 디스플레이로 자연스럽게 확장됩니다.</p>
+            </div>
+            <div class="device-sync-visual">
+              <div class="sync-badge">CarKey + UWB 2.0</div>
+              <div class="sync-wave"></div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bento-card">
+            <div class="bento-content">
+              <span class="bento-tag">DESIGN ARCHITECTURE</span>
+              <h3>군더더기 없는 공기역학 실루엣</h3>
+              <p>물리적 버튼을 덜어내고 빛과 표면만으로 정제한 티타늄 유니바디. 항력계수 Cd 0.19를 달성했습니다.</p>
+            </div>
+            <div class="drag-stat">
+              <span class="drag-number">Cd 0.19</span>
+              <span class="drag-label">세계 최저 수준 공기저항</span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bento-card bento-wide">
+            <div class="bento-content">
+              <span class="bento-tag">IMMERSIVE INTERIOR</span>
+              <h3>공간 음향과 스마트 글래스 룸</h3>
+              <p>외부 소음을 99.8% 차단하는 액티브 노이즈 캔슬링 글래스와 전 좌석 개별 공간 음향 스피커로 나만의 영화관 또는 콘서트홀로 변신합니다.</p>
+            </div>
+            <div class="audio-waves">
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Color & Edition Gallery -->
+    <section class="gallery-section" id="gallery">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-pill">COLOR PALETTE</span>
+          <h2 class="section-title">취향을 담은 정교한 마감</h2>
+          <p class="section-subtitle">항공우주 등급 티타늄과 나노 세라믹 코팅으로 완성된 고유의 컬러를 확인하세요.</p>
+        </div>
+
+        <div class="color-showcase">
+          <div class="color-preview-box">
+            <div class="car-color-aura" id="color-aura"></div>
+            <div class="color-car-card">
+              <img src="apple_car_hero.jpg" alt="Apple Car 컬러 프리뷰" class="color-preview-img" id="color-target-img">
+              <div class="color-name-display" id="color-name-display">Titanium Silver (티타늄 실버)</div>
+            </div>
+          </div>
+
+          <div class="color-selector-pills">
+            <button class="color-btn active" data-color="silver" data-name="Titanium Silver (티타늄 실버)" aria-label="티타늄 실버">
+              <span class="swatch silver"></span>
+              <span class="swatch-label">티타늄 실버</span>
+            </button>
+            <button class="color-btn" data-color="space-black" data-name="Space Black (스페이스 블랙)" aria-label="스페이스 블랙">
+              <span class="swatch black"></span>
+              <span class="swatch-label">스페이스 블랙</span>
+            </button>
+            <button class="color-btn" data-color="ceramic-white" data-name="Ceramic White (세라믹 화이트)" aria-label="세라믹 화이트">
+              <span class="swatch white"></span>
+              <span class="swatch-label">세라믹 화이트</span>
+            </button>
+            <button class="color-btn" data-color="midnight-blue" data-name="Midnight Blue (미드나이트 블루)" aria-label="미드나이트 블루">
+              <span class="swatch blue"></span>
+              <span class="swatch-label">미드나이트 블루</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pre-order Section -->
+    <section class="preorder-section" id="preorder">
+      <div class="section-container">
+        <div class="preorder-glass-card">
+          <div class="preorder-header">
+            <span class="preorder-badge">PRE-ORDER INVITATION</span>
+            <h2 class="preorder-title">혁명을 가장 먼저 경험하세요</h2>
+            <p class="preorder-sub">사전 예약자분들께는 프라이빗 시승 쇼케이스 초대권 및 한정판 스페셜 각인 키가 제공됩니다.</p>
+          </div>
+
+          <form class="preorder-form" id="preorder-form">
+            <div class="form-row">
+              <div class="input-group">
+                <label for="user-name">성명</label>
+                <input type="text" id="user-name" required placeholder="홍길동">
+              </div>
+              <div class="input-group">
+                <label for="user-contact">연락처</label>
+                <input type="tel" id="user-contact" required placeholder="010-1234-5678">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="input-group">
+                <label for="user-email">이메일</label>
+                <input type="email" id="user-email" required placeholder="applecar@example.com">
+              </div>
+              <div class="input-group">
+                <label for="model-select">관심 모델</label>
+                <select id="model-select" required>
+                  <option value="pro">Apple Car Pro (₩89,000,000~)</option>
+                  <option value="edition">Apple Car Edition (₩129,000,000~)</option>
+                  <option value="drive">Apple Car Drive (₩65,000,000~)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-footer">
+              <button type="submit" class="btn-submit" id="submit-btn">
+                <span>사전 예약 신청 완료</span>
+                <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <!-- Toast Notification -->
+          <div class="toast-notice" id="toast-notice">
+            <div class="toast-icon">✓</div>
+            <div class="toast-body">
+              <strong>사전 예약 신청이 완료되었습니다!</strong>
+              <p>작성해주신 이메일로 VIP 쇼케이스 초대장이 발송되었습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-legal">
+        <p>1. 주행가능거리 및 충전 수치는 특정 테스트 환경 기준이며 주행 조건 및 외부 온도에 따라 변동될 수 있습니다.</p>
+        <p>2. 완전 자율주행 기능은 국가 및 지역별 법령 및 인프라 승인 상태에 따라 기능 활성화 시점이 상이할 수 있습니다.</p>
+        <p>3. 본 페이지는 Apple Car 콘셉트 쇼케이스를 위해 기획 및 제작된 데모 원페이지 사이트입니다.</p>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          Copyright © 2026 Apple Inc. 모든 권리 보유.
+        </div>
+        <div class="footer-links">
+          <a href="#">개인정보 처리방침</a>
+          <a href="#">이용 약관</a>
+          <a href="#">법적 고지</a>
+          <a href="#">사이트맵</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
